@@ -6,7 +6,7 @@ function wordMaker()
     if (numbersBool === 'true') {letterSet = customConcat(letterSet,numbersList);}
     if (symbolsBool === 'true') {letterSet = customConcat(letterSet,symbolsList);}
     if (extraSymbolsBool === 'true') {letterSet = customConcat(letterSet,extraSymbolsList);}
-    if (customText.length != 0) {letterSet = customConcat(letterSet,customText);}
+    if (customText && customText.length !== 0) {letterSet = customConcat(letterSet, customText);}
     console.log("this is your letterset from helpers.js: " + letterSet);
     //check if letterset is not empty
     if (letterSet.length === 0)//so if it is empty at the start, fill it with small letters
