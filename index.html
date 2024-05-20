@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="helpers.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+
+    #stats-table {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #text-overlay {
+        position: absolute;
+        top: 195px; /*this on is 118 bigger than overlay 2*/
+        left: 0;
+        width: 100%;
+        height: 50px; /* Adjust the height of the white bar as needed */
+        background-color: white;
+        z-index: 1; /* Ensure the overlay is above the text */
+    }
+    #text-overlay2 {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 50px; /* Adjust the height of the white bar as needed */
+        background-color: white;
+        z-index: 1; /* Ensure the overlay is above the text */
+    }
+
+
+    .bigger-row {
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+    table {
+        font-family: 'Courier', sans-serif;
+        font-size: 30px;
+        margin: 0 auto; /* This will center the table horizontally */
+        border-collapse: collapse; /* Remove the spacing between table cells */
+
+    }
+    #stats-table {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+    #stats-table td {
+    font-size: 24px; /* Make the font size smaller for the cells */
+    color: grey;
+    text-align: left; /* Align text to the left within the cells */
+    padding: 0px; /* Add padding to the cells for spacing */
+    }
+
+    td {
+        padding: 0px; /* Add padding to the cells for spacing */
+        border: none; /* Remove the border around the cells */
+    }
+    .small-row1 td
+    {
+        font-size: 28px; /* Make the font size smaller for the cells in the first row */
+        color: grey;
+        margin-bottom: 5px; /* Set the margin at the bottom of each cell */
+        bottom: 0; /* Position the element at the bottom of the browser window */
+    }
+
+
+
+    .big-row td {
+        font-size: 30px; /* Make the font size bigger for the cells in the second row */
+    }
+
+
+
+</style>
+
+<body>
+<!-- //menu -->
+    <div id="styled-letters-container"></div>
+    <div id="text-overlay"></div>
+    <div id="text-overlay2"></div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Thomas' Typing Training</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<div>
+    <table id="letterTable">
+        <tr class="big-row">
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+            <td id="10"></td>
+            <td id="11"></td>
+            <td id="12"></td>
+            <td id="13"></td>
+            <td id="14"></td>
+            <td id="15"></td>
+            <td id="16"></td>
+            <td id="17"></td>
+            <td id="18"></td>
+            <td id="19"></td>
+            <td id="20"></td>
+            <td id="21"></td>
+            <td id="22"></td>
+            <td id="23"></td>
+            <td id="24"></td>
+            <td id="25"></td>
+            <td id="26"></td>
+            <td id="27"></td>
+            <td id="28"></td>
+            <td id="29"></td>
+            <td id="30"></td>
+        </tr>
+    </table>
+    <table>
+        <tr class="big-row">
+            <td id="31"></td>
+            <td id="32"></td>
+            <td id="33"></td>
+            <td id="34"></td>
+            <td id="35"></td>
+            <td id="36"></td>
+            <td id="37"></td>
+            <td id="38"></td>
+            <td id="39"></td>
+            <td id="40"></td>
+            <td id="41"></td>
+            <td id="42"></td>
+            <td id="43"></td>
+            <td id="44"></td>
+            <td id="45"></td>
+            <td id="46"></td>
+            <td id="47"></td>
+            <td id="48"></td>
+            <td id="49"></td>
+            <td id="50"></td>
+            <td id="51"></td>
+            <td id="52"></td>
+            <td id="53"></td>
+            <td id="54"></td>
+            <td id="55"></td>
+            <td id="56"></td>
+            <td id="57"></td>
+            <td id="58"></td>
+            <td id="59"></td>
+            <td id="60"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr class="big-row">
+            <td id="61"></td>
+            <td id="62"></td>
+            <td id="63"></td>
+            <td id="64"></td>
+            <td id="65"></td>
+            <td id="66"></td>
+            <td id="67"></td>
+            <td id="68"></td>
+            <td id="69"></td>
+            <td id="70"></td>
+            <td id="71"></td>
+            <td id="72"></td>
+            <td id="73"></td>
+            <td id="74"></td>
+            <td id="75"></td>
+            <td id="76"></td>
+            <td id="77"></td>
+            <td id="78"></td>
+            <td id="79"></td>
+            <td id="80"></td>
+            <td id="81"></td>
+            <td id="82"></td>
+            <td id="83"></td>
+            <td id="84"></td>
+            <td id="85"></td>
+            <td id="86"></td>
+            <td id="87"></td>
+            <td id="88"></td>
+            <td id="89"></td>
+            <td id="90"></td>
+        </tr>
+    </table>
+</div>
+    <table id="stats-table">
+        <tr class="small-row1">
+            <td id="KPM">KPM</td>
+        </tr>
+        <tr class="small-row1">
+            <td id="accuracy">Accuracy</td>
+        </tr>
+        <tr class="small-row1">
+            <td id="AvgKPM">Avg KPM</td>
+        </tr>
+        <tr class="small-row1">
+            <td id="WPM">WPM</td>
+        </tr>
+        <tr class="small-row1">
+            <td>
+                <a href="settings.html">Settings</a>
+            </td>
+        </tr>
+        </tr>
+    </table>
+
+    <script src='java.js'>
+
+    </script>
+</body>
+</html>
